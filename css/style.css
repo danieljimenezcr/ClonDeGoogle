@@ -27,8 +27,8 @@ header nav .nav-right-section {
     align-items: center;
 }
 nav .nav-right-section a {
-    margin-right: 10px;
-    color: #000000;
+    margin-right: 15px;
+    color: #424949;
 }
 nav .nav-right-section .menu-icon {
     background-image: url("https://static.thenounproject.com/png/756729-200.png");
@@ -39,6 +39,10 @@ nav .nav-right-section .menu-icon {
     height: 25px;
     cursor: pointer;
     
+}
+
+nav ul li:hover {
+    text-decoration: underline;
 }
 nav .nav-right-section img {
     border-radius: 50px;
@@ -121,6 +125,24 @@ main .main-buttons button:hover {
 main .main-buttons button:active {
     border: 1px solid #5c70e4;
 }
+
+main .language {
+    margin-top: 20px;
+    color: #424949;
+}
+
+main div a:active {
+    color: #2560d7;
+    cursor: pointer;
+}
+main div a:visited {
+    color: #2560d7;
+}
+
+main div a:hover {
+    text-decoration: underline;
+}
+
 footer {
     width: 100%;
     height: 50px;
