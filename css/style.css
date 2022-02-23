@@ -64,5 +64,15 @@ main .main-input {
 }
 main .main-input-container {
     width: 525px;
-    border-radius: 50%;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
 }
