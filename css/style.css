@@ -53,10 +53,6 @@ main .main-logo {
     margin: 0 auto;
     margin-bottom: 35px;
 }
-main .main-logo img {
-    
-}
-
 main .main-input {
     width: 530px;
     margin: 0 auto;
@@ -75,4 +71,25 @@ main .main-input input {
     height: 40px;
     border: none;
     outline: none;
+}
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+main .main-input .search-icon {
+    background-image: url("https://i.pinimg.com/originals/35/50/1e/35501e019ad0aae4933a1fe4501ec16a.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+main .main-input .mic-icon {
+    background-image: url(https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
 }
