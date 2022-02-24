@@ -144,33 +144,121 @@ main div a:hover {
 }
 
 footer {
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    font-size: 15px;
+}
+
+footer .footer-country {
     background-color: #f2f2f2;
-    border-top: 1px solid #e4e4e4;
-}
-footer ul {
-    margin: 10px;
-    list-style: none;
+    width: 100%;
+    height: 48px;
     display: flex;
-    padding-left: 0;
+    flex-wrap: wrap; 
+    position: absolute;
+    bottom: 48px;
+    border-bottom: 1px solid #dfe1e5; 
+    font-size: 15px;
+    align-items: center;
 }
-footer .footer-left {
-    justify-content: left;
+
+footer div span {
+    margin-left: 32px;
+    color: #70757a;
 }
-footer .footer-right {
+footer div ul {
+    align-items: center;
+    list-style: none;
+}
+
+footer .footer-options {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 48px;
+    position: absolute;
+    bottom: 0;
+
+}
+
+ul.footer-right {
     justify-content: right;
+    list-style: none;
+    align-items: center;
+    position: absolute;
+    bottom: 2px;
+    right: 40px;
 }
-footer ul li a {
-    margin: 10px;
+
+ footer ul {
+     list-style: none;
+     display: flex;
+     font-size: 14px;
+     padding-left: 0;
+ }  
+ footer div ul li{
+     margin-left: 32px;
+ }
+ footer ul li a:visited {
     color: #70757a;
+ }
+
+ footer ul li a:hover {
+     text-decoration: underline;
+ }
+
+
+/* Estilos para Responsive */
+ @media (max-width: 300px) {
+    footer .footer-options {
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 128px;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 48;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .footer-country {
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 12px;
+        border-bottom: 1px solid #dfe1e5; 
+        font-size: 15px;
+        align-items: center; 
+    }
 }
-footer ul li a:visited {
-    color: #70757a;
+@media (max-width: 850px) {
+    footer .footer-country {
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 128px;
+        border-bottom: 1px solid #dfe1e5; 
+        font-size: 15px;
+        justify-content: left;
+        align-items: center; 
+    }
+    footer .footer-options {
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 128px;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 48;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+
 }
